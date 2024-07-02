@@ -51,7 +51,7 @@ public class StarLauncher : MonoBehaviour
     void Update()
     {
         if (insideLaunchStar)
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetButtonDown("Fire1"))
                 StartCoroutine(CenterLaunch());
 
 
