@@ -37,3 +37,9 @@ sysinfo.txt
 
 # Ignore recordings folder
 Recordings/
+Logs/AssetImportWorker0-prev.log
+Logs/AssetImportWorker0.log
+Logs/AssetImportWorker1-prev.log
+Logs/AssetImportWorker1.log
+Logs/shadercompiler-UnityShaderCompiler.exe1.log
+UserSettings/Layouts/default-2021.dwlt
