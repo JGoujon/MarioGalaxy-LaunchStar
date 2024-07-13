@@ -9599,7 +9599,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d640d0d3392a2fb4099d2dc622ed257c, type: 2}
-  - {fileID: 2100000, guid: d640d0d3392a2fb4099d2dc622ed257c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15508,6 +15507,7 @@ MonoBehaviour:
   launchInterval: 0.2
   followParticles: {fileID: 691752102}
   smokeParticle: {fileID: 1342292151}
+  starLaunch: event:/SFX/SFX_Star_Charge
 --- !u!1 &879785423571471066
 GameObject:
   m_ObjectHideFlags: 0

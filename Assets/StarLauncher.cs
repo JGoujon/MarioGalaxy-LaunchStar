@@ -41,6 +41,12 @@ public class StarLauncher : MonoBehaviour
     public ParticleSystem followParticles;
     public ParticleSystem smokeParticle;
 
+    [Space]
+    [Header("Sound")]
+    public string starLaunch;
+    //public string starStart;
+    public FMOD.Studio.EventInstance instance;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -52,7 +58,12 @@ public class StarLauncher : MonoBehaviour
     {
         if (insideLaunchStar)
             if (Input.GetButtonDown("Fire1"))
+            {
+                instance = FMODUnity.RuntimeManager.CreateInstance(starLaunch);
+                instance.start();
                 StartCoroutine(CenterLaunch());
+            }
+                
 
 
         if (flying)

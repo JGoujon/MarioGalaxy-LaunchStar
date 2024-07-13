@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{51f29566-f46f-44b9-9435-820b7c4ede20}">
+		<property name="assetPath">
+			<value>Metal, Misc, Short Ping SND19862 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.20483333333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0a46a9a-56c6-438d-ad29-f80e3f1afa65}</destination>
+		</relationship>
+	</object>
+</objects>

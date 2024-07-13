@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using FMODUnity;
 
 public class StarAnimation : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class StarAnimation : MonoBehaviour
     public ParticleSystem charge;
     public ParticleSystem explode;
     public ParticleSystem smoke;
+    [Space]
+    [Header("Sound")]
+    //public string starLaunch;
+    public string starStart;
+    public FMOD.Studio.EventInstance instance;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -54,7 +60,11 @@ public class StarAnimation : MonoBehaviour
 
         Sequence s = DOTween.Sequence();
 
-        s.AppendCallback(() => explode.Play());
+        s.AppendCallback(() => 
+        {
+            explode.Play();
+            explodeSound(); // Appel de la méthode pour jouer le son
+        });
         s.AppendCallback(() => smoke.Play());
         s.AppendCallback(() => impulses[0].GenerateImpulse());
         s.Append(small.DOLocalMove(Vector3.zero, .8f).SetEase(punch));
@@ -63,5 +73,13 @@ public class StarAnimation : MonoBehaviour
         s.AppendCallback(() => animator.enabled = true);
 
         return s;
+    }
+
+    void explodeSound()
+    {
+        instance = RuntimeManager.CreateInstance(starStart);
+        RuntimeManager.AttachInstanceToGameObject(instance, transform, GetComponent<Rigidbody>());
+        instance.start();
+        instance.release();
     }
 }

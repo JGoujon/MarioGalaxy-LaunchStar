@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-5352886512982563323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Star_Charge
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Star_Charge
+  Guid:
+    Data1: 266306416
+    Data2: 1221633818
+    Data3: 454406812
+    Data4: 1651463857
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 987
 --- !u!114 &-4848172271510593959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638554537948701857
+  lastModified: 638565120539165657
   FileSizes:
   - Name: Desktop
-    Value: 42688
+    Value: 86880
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -64,12 +91,14 @@ MonoBehaviour:
   - {fileID: -4848172271510593959}
   EditorEvents:
   - {fileID: -5504517677710565410}
+  - {fileID: 6616368046014373731}
+  - {fileID: -5352886512982563323}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4848172271510593959}
   StringsBanks:
   - {fileID: 3461546473987185131}
-  cacheTime: 638554537948731758
+  cacheTime: 638565120539185602
   cacheVersion: 131616
 --- !u!114 &3461546473987185131
 MonoBehaviour:
@@ -86,8 +115,35 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638554537948731758
+  lastModified: 638565120539185602
   FileSizes:
   - Name: Desktop
-    Value: 754
+    Value: 864
   Exists: 1
+--- !u!114 &6616368046014373731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Star_Start
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Star_Start
+  Guid:
+    Data1: -1340345015
+    Data2: 1237736762
+    Data3: 1956719242
+    Data4: 1536668634
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 50
+  MaxDistance: 100
+  Length: 3000
