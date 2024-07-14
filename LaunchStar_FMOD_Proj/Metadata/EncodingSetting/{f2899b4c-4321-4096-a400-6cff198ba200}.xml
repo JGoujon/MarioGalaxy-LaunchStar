@@ -7,6 +7,9 @@
 		<property name="quality">
 			<value>37</value>
 		</property>
+		<property name="loadingMode">
+			<value>2</value>
+		</property>
 		<relationship name="platform">
 			<destination>{d446f96b-d4d6-40ab-91d1-f3444e611fa2}</destination>
 		</relationship>

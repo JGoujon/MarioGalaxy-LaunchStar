@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001955CD1A328 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001486315C608 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,5 +17,238 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F7E768, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F7E768
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014664495550
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F7E768
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F7CFC8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F7CFC8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001486633E720
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F7CFC8
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F7CFC8)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (000001485FA28F08)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F83358)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F7E768)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014691969BD8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F7BB88)
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F836B8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F836B8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000148612F86C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F836B8
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F81858, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F81858
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000148612F8940
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F81858
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F81858)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (00000148369AAF68)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F7EFD8)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F836B8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014889133318)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F84CA8)
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F7FBA8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F7FBA8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000149450D5F60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F7FBA8
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F82938, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F82938
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000149450D5A60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F82938
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F82938)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (00000146683B6348)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F7F338)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F7FBA8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (000001485FA28548)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F82788)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Jet/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jvgbOz/hotswap_2.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Jet/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-jvgbOz/hotswap_2.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F836B8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F836B8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014866A35660
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F836B8
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F82938, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F82938
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014866A352A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F82938
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F82938)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (00000149119EE298)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F84CA8)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F836B8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (00000148669AFA58)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F7F338)
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F7FBA8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F7FBA8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014691557A30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F7FBA8
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F85008, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F85008
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014691557DF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F85008
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F85008)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (00000149119EDF58)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F81858)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F7FBA8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (00000149119EE778)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F84CA8)
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F840D8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F840D8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014691557A30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_Star_Charge_01', format=5, channels=2, frequency=48000, lengthbytes=41312, lengthpcm=153600, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.325356.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F840D8
+[LOG] SystemI::createSound                     : filename = LaunchStar_FMOD_Proj/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000014668F836B8, queue head = 00000148655BDFD8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014668F836B8
+[LOG] SystemI::createSoundInternal             :     Create name='LaunchStar_FMOD_Proj/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 91104
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 4736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000146915582F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='SFX_StarLaunch_Canon_01', format=5, channels=1, frequency=48000, lengthbytes=9280, lengthpcm=62400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630045.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014668F836B8
+[LOG] SoundI::release                          : SFX_StarLaunch_Canon_01 (0000014668F836B8)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (00000149119EEC58)
+[LOG] SoundI::release                          :     SFX_StarLaunch_Canon_01 (0000014668F7F338)
+[LOG] SoundI::release                          : SFX_Star_Charge_01 (0000014668F840D8)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (00000149119EE298)
+[LOG] SoundI::release                          :     SFX_Star_Charge_01 (0000014668F82938)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed

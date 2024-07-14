@@ -20,7 +20,7 @@ MonoBehaviour:
     Data4: -785975874
   Banks:
   - {fileID: -4848172271510593959}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -47,13 +47,13 @@ MonoBehaviour:
     Data4: 1651463857
   Banks:
   - {fileID: -4848172271510593959}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 987
+  Length: 3200
 --- !u!114 &-4848172271510593959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638565120539165657
+  lastModified: 638565965413533407
   FileSizes:
   - Name: Desktop
-    Value: 86880
+    Value: 95840
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   - {fileID: -4848172271510593959}
   StringsBanks:
   - {fileID: 3461546473987185131}
-  cacheTime: 638565120539185602
+  cacheTime: 638565965413563350
   cacheVersion: 131616
 --- !u!114 &3461546473987185131
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638565120539185602
+  lastModified: 638565965413563350
   FileSizes:
   - Name: Desktop
     Value: 864
@@ -140,10 +140,10 @@ MonoBehaviour:
     Data4: 1536668634
   Banks:
   - {fileID: -4848172271510593959}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 50
-  MaxDistance: 100
-  Length: 3000
+  MinDistance: 20
+  MaxDistance: 50
+  Length: 1300
