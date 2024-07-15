@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cbdff1d2-d594-4f97-8d6a-868900909bd8}">
+		<property name="assetPath">
+			<value>Musical, Stringed, Violin, Stab, Rhythmic, Reverberant, Horroresque 02 SND52920.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.89391666666666669</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0a46a9a-56c6-438d-ad29-f80e3f1afa65}</destination>
+		</relationship>
+	</object>
+</objects>

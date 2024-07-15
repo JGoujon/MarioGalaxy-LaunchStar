@@ -2,6 +2,7 @@
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using FMODUnity;
 
 public class StarLauncher : MonoBehaviour
 {
@@ -44,8 +45,11 @@ public class StarLauncher : MonoBehaviour
     [Space]
     [Header("Sound")]
     public string starLaunch;
-    //public string starStart;
+    //public string playerRoll;
+    public string playerFly;
     public FMOD.Studio.EventInstance instance;
+    private bool wasFlying;
+    private bool isLaunching; // Variable to track if the launch sequence is in progress
 
     void Start()
     {
@@ -56,15 +60,20 @@ public class StarLauncher : MonoBehaviour
 
     void Update()
     {
-        if (insideLaunchStar)
+        if (insideLaunchStar && !isLaunching)
             if (Input.GetButtonDown("Fire1"))
             {
                 instance = FMODUnity.RuntimeManager.CreateInstance(starLaunch);
                 instance.start();
                 StartCoroutine(CenterLaunch());
             }
-                
 
+        if (!wasFlying && flying)
+        {
+            instance = FMODUnity.RuntimeManager.CreateInstance(playerFly);
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, transform, GetComponent<Rigidbody>());
+            instance.start();
+        }
 
         if (flying)
         {
@@ -92,10 +101,14 @@ public class StarLauncher : MonoBehaviour
             Time.timeScale = 1f;
         if (Input.GetKeyDown(KeyCode.R))
             UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+
+        // Update the previous state of 'flying'
+        wasFlying = flying;
     }
 
     IEnumerator CenterLaunch()
     {
+        isLaunching = true;
         movement.enabled = false;
         transform.parent = null;
         DOTween.KillAll();
@@ -151,9 +164,10 @@ public class StarLauncher : MonoBehaviour
         s.AppendCallback(() => followParticles.Play());
         s.Append(DOVirtual.Float(dollyCart.m_Position, 1, finalSpeed, PathSpeed).SetEase(pathCurve));                // Lerp the value of the Dolly Cart position from 0 to 1
         s.Join(starAnimation.PunchStar(.5f));
+        
         s.Join(transform.DOLocalMove(new Vector3(0,0,-.5f), .5f));                                                   // Return player's Y position
         s.Join(transform.DOLocalRotate(new Vector3(0, 360, 0),                                                       // Slow rotation for when player is flying
-            (finalSpeed/1.3f), RotateMode.LocalAxisAdd)).SetEase(Ease.InOutSine); 
+            (finalSpeed/1.3f), RotateMode.LocalAxisAdd)).SetEase(Ease.InOutSine);
         s.AppendCallback(() => Land());                                                                              // Call Land Function
 
         return s;
@@ -166,13 +180,14 @@ public class StarLauncher : MonoBehaviour
         dollyCart.m_Position = 0;
         movement.enabled = true;
         transform.parent = null;
-
+        
         flying = false;
         almostFinished = false;
         animator.SetBool("flying", false);
 
         followParticles.Stop();
         trail.emitting = false;
+        isLaunching = false; // Reset launching to false when the sequence ends
     }
 
     public void PathSpeed(float x)

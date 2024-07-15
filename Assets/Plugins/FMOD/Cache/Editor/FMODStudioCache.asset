@@ -53,7 +53,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3200
+  Length: 2200
 --- !u!114 &-4848172271510593959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,11 +69,65 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638565965413533407
+  lastModified: 638566687554576003
   FileSizes:
   - Name: Desktop
-    Value: 95840
+    Value: 144992
   Exists: 1
+--- !u!114 &-2750475774403570954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/FS/FS_Player_Land
+  m_EditorClassIdentifier: 
+  Path: event:/Player/FS/FS_Player_Land
+  Guid:
+    Data1: -955881647
+    Data2: 1168829188
+    Data3: -1055258706
+    Data4: 973114389
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 20
+  MaxDistance: 100
+  Length: 1200
+--- !u!114 &-262599016311971655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/FOL/FOL_Player_Roll
+  m_EditorClassIdentifier: 
+  Path: event:/Player/FOL/FOL_Player_Roll
+  Guid:
+    Data1: -443401940
+    Data2: 1246008440
+    Data3: 392974498
+    Data4: 1653222864
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 20
+  MaxDistance: 100
+  Length: 785
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,13 +147,43 @@ MonoBehaviour:
   - {fileID: -5504517677710565410}
   - {fileID: 6616368046014373731}
   - {fileID: -5352886512982563323}
+  - {fileID: -2750475774403570954}
+  - {fileID: 2640282469091159902}
+  - {fileID: -262599016311971655}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4848172271510593959}
   StringsBanks:
   - {fileID: 3461546473987185131}
-  cacheTime: 638565965413563350
+  cacheTime: 638566687554595953
   cacheVersion: 131616
+--- !u!114 &2640282469091159902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Flying
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Flying
+  Guid:
+    Data1: 1494114473
+    Data2: 1329401855
+    Data3: -882165586
+    Data4: -820613288
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 20
+  MaxDistance: 70
+  Length: 4300
 --- !u!114 &3461546473987185131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,10 +199,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638565965413563350
+  lastModified: 638566687554595953
   FileSizes:
   - Name: Desktop
-    Value: 864
+    Value: 1028
   Exists: 1
 --- !u!114 &6616368046014373731
 MonoBehaviour:
@@ -145,5 +229,5 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 20
-  MaxDistance: 50
+  MaxDistance: 100
   Length: 1300

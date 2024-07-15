@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Launch
   - CameraTrigger
+  - PlayerEyes
+  - Ground
   layers:
   - Default
   - TransparentFX
