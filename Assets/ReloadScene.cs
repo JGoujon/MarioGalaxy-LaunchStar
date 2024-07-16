@@ -11,11 +11,13 @@ public class ReloadScene : MonoBehaviour
     public ParticleSystem smokeEffect; // Référence au système de particules pour l'effet de fumée
     public Canvas canvas;
     public Canvas canvasTooBad;
+    public Canvas canvasSmoke;
 
     private void Start()
     {
         canvas.enabled = false;
         canvasTooBad.enabled = false;
+        canvasSmoke.enabled = false;
     }
 
     private void OnTriggerEnter(Collider col)
@@ -27,6 +29,7 @@ public class ReloadScene : MonoBehaviour
             {
                 canvas.enabled = !canvas.enabled;
                 canvasTooBad.enabled = !canvasTooBad.enabled;
+                canvasSmoke.enabled= !canvasSmoke.enabled;
                 StartCoroutine(ReloadAfterFade());
             }
             else
@@ -41,7 +44,7 @@ public class ReloadScene : MonoBehaviour
         Debug.Log("Fade animation triggered.");  // Log pour vérifier le déclenchement de l'animation
         fadeAnimator.SetTrigger("Fade");  // Déclencher l'animation de fade
         tooBadAnimator.SetTrigger("PlayTooBad");
-        smokeEffect.Play();
+        //smokeEffect.Play();
         yield return new WaitForSeconds(fadeDuration); // Attendre la fin de l'animation
         //canvasGroup.alpha = 1;
         Debug.Log("Scene is reloading.");  // Log juste avant de recharger la scène
