@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fdce2986-c911-4f65-9e0e-a7aaf3362f94}">
+		<property name="assetPath">
+			<value>jammogalaxy.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>94.117645833333327</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0a46a9a-56c6-438d-ad29-f80e3f1afa65}</destination>
+		</relationship>
+	</object>
+</objects>
