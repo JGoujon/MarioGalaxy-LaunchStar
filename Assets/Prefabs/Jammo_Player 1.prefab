@@ -15282,7 +15282,6 @@ GameObject:
   - component: {fileID: 9164257891650467945}
   - component: {fileID: 4407546936892406155}
   - component: {fileID: 1692599199}
-  - component: {fileID: 2225887772104279866}
   m_Layer: 0
   m_Name: Jammo_Player 1
   m_TagString: Player
@@ -15511,19 +15510,6 @@ MonoBehaviour:
   starLaunch: event:/SFX/SFX_Star_Charge
   playerFly: event:/SFX/SFX_Flying
 --- !u!114 &1692599199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868094021297405631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a8f5d98657a2e048ba5045d8d9c68af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLand: event:/Player/FS/FS_Player_Land
---- !u!114 &2225887772104279866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
