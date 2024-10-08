@@ -23,11 +23,16 @@ public class StarAnimation : MonoBehaviour
     //public string starLaunch;
     public string starStart;
     public FMOD.Studio.EventInstance instance;
+    public string starIdle;
+    public FMOD.Studio.EventInstance idlesound;
     private void Start()
     {
         animator = GetComponent<Animator>();
         big = transform.GetChild(0);
         small = transform.GetChild(1);
+        idlesound = RuntimeManager.CreateInstance(starIdle);
+        RuntimeManager.AttachInstanceToGameObject(idlesound, transform, GetComponent<Rigidbody>());
+        idlesound.start();
     }
 
     public Sequence Reset(float time)
@@ -81,5 +86,9 @@ public class StarAnimation : MonoBehaviour
         RuntimeManager.AttachInstanceToGameObject(instance, transform, GetComponent<Rigidbody>());
         instance.start();
         instance.release();
+    }
+    private void OnDestroy()
+    {
+        idlesound.release();
     }
 }

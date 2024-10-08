@@ -7,12 +7,29 @@ public class animationSounds : MonoBehaviour
     // Start is called before the first frame update
     public string playerLand;
     public string playerWalk;
+    private bool isWalking = false;
     public void Player_Land()
     {
         FMODUnity.RuntimeManager.PlayOneShot(playerLand, transform.position);
     }
     public void Player_Walk()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(playerWalk, transform.position);
+        if (isWalking) 
+        { 
+            FMODUnity.RuntimeManager.PlayOneShot(playerWalk, transform.position);
+        }
+        
+    }
+    void Update()
+    {
+        // Check if player is moving
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
     }
 }

@@ -24721,6 +24721,7 @@ MonoBehaviour:
   explode: {fileID: 2383272397771406674}
   smoke: {fileID: 2383272396782122941}
   starStart: event:/SFX/SFX_Star_Start
+  starIdle: event:/SFX/SFX_Star_Idle
 --- !u!1 &6861545204036286551
 GameObject:
   m_ObjectHideFlags: 0
