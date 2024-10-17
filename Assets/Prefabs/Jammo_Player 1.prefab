@@ -15522,6 +15522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLand: event:/Player/FS/FS_Player_Land
+  playerWalk: event:/Player/FS/FS_Player_Walk
 --- !u!1 &879785423571471066
 GameObject:
   m_ObjectHideFlags: 0

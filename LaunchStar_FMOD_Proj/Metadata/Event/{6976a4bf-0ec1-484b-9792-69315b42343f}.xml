@@ -63,9 +63,6 @@
 		<property name="voiceStealing">
 			<value>2</value>
 		</property>
-		<property name="maximumDistance">
-			<value>30</value>
-		</property>
 	</object>
 	<object class="MarkerTrack" id="{ca347b38-a9b2-4204-80dc-2358d3125294}" />
 	<object class="GroupTrack" id="{ee1a6ab7-b318-4372-9750-273da793baec}">
@@ -156,11 +153,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{f2a91faa-9077-4486-b288-35a04c17266b}" />
 	<object class="MixerBusFader" id="{1e2153e6-7727-448e-b2c7-9f4197283587}" />
-	<object class="SpatialiserEffect" id="{b9886b29-3b00-4113-8f63-892ecd7e35b6}">
-		<property name="extentMode">
-			<value>1</value>
-		</property>
-	</object>
+	<object class="SpatialiserEffect" id="{b9886b29-3b00-4113-8f63-892ecd7e35b6}" />
 	<object class="ThreeEQEffect" id="{c3a78555-3104-4e55-a232-9397bc3a5e9d}">
 		<property name="midGain">
 			<value>-12</value>

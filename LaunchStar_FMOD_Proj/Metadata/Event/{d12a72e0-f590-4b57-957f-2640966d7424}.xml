@@ -62,7 +62,11 @@
 			<destination>{b97b4249-22a1-4381-99c4-f893c10b3f0e}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{be15039f-6b2a-4710-9de6-ca0efa43fa00}" />
+	<object class="EventAutomatableProperties" id="{be15039f-6b2a-4710-9de6-ca0efa43fa00}">
+		<property name="triggerCooldown">
+			<value>90</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{16299c09-5c42-4ce2-91f8-1f72692871bc}" />
 	<object class="GroupTrack" id="{25b19a6c-b49f-423d-82ff-2d1bfc91da05}">
 		<relationship name="mixerGroup">
@@ -80,6 +84,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{5c747cdc-4c72-46c9-b5d4-b2dd633ec655}">
+		<property name="volume">
+			<value>3</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{ec531a97-599f-401e-96ef-77162b55e32b}</destination>
 		</relationship>
@@ -91,6 +98,9 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{7a4ad471-6c49-44b3-8105-ae7552da2295}">
+		<property name="playbackMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{876e2d4c-1c2b-4b11-8311-4b61bfc53d6e}</destination>
 		</relationship>
