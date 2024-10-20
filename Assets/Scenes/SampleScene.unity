@@ -4520,6 +4520,10 @@ PrefabInstance:
       propertyPath: playerRun
       value: event:/Player/FS/FS_Player_Walk
       objectReference: {fileID: 0}
+    - target: {fileID: 1692599199, guid: 2986a25112b406848a5ee06973b30a8a, type: 3}
+      propertyPath: playerTalk
+      value: event:/Player/VO_Player
+      objectReference: {fileID: 0}
     - target: {fileID: 283116789823444483, guid: 2986a25112b406848a5ee06973b30a8a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5658,7 +5662,12 @@ PrefabInstance:
     - target: {fileID: 928725551996133447, guid: 17035a77ee20e2e47b15a5be0b0b488f,
         type: 3}
       propertyPath: snapshot
-      value: snapshot:/OutOfFocus*
+      value: event:/TEST
+      objectReference: {fileID: 0}
+    - target: {fileID: 928725551996133447, guid: 17035a77ee20e2e47b15a5be0b0b488f,
+        type: 3}
+      propertyPath: deathSound
+      value: event:/SFX/SFX_Death
       objectReference: {fileID: 0}
     - target: {fileID: 928725551996133447, guid: 17035a77ee20e2e47b15a5be0b0b488f,
         type: 3}

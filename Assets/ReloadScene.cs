@@ -16,8 +16,10 @@ public class ReloadScene : MonoBehaviour
     public Canvas canvasSmoke;
     public string music;
     public string snapshot;
+    public string deathSound;
     public FMOD.Studio.EventInstance instance;
     private FMOD.Studio.EventInstance  muteaudio;
+    private FMOD.Studio.EventInstance  playerdeath;
 
     private void Start()
     {
@@ -29,6 +31,7 @@ public class ReloadScene : MonoBehaviour
         instance.start();
 
         muteaudio = FMODUnity.RuntimeManager.CreateInstance(snapshot);
+        playerdeath = FMODUnity.RuntimeManager.CreateInstance(deathSound);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -67,6 +70,7 @@ public class ReloadScene : MonoBehaviour
     private IEnumerator ReloadAfterFade()
     {
         Debug.Log("Fade animation triggered.");  // Log pour vérifier le déclenchement de l'animation
+        playerdeath.start();
         fadeAnimator.SetTrigger("Fade");  // Déclencher l'animation de fade
         tooBadAnimator.SetTrigger("PlayTooBad");
         instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
@@ -81,5 +85,6 @@ public class ReloadScene : MonoBehaviour
     {
         instance.release();
         muteaudio.release();
+        playerdeath.release();
     }
 }

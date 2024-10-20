@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{08019d98-676f-4163-97cc-ff88b6375c22}">
+		<property name="assetPath">
+			<value>VO_Player_07.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.9497291666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0a46a9a-56c6-438d-ad29-f80e3f1afa65}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bf922bfe-c27c-4d09-b858-d6d7252e3ed6}">
+		<property name="assetPath">
+			<value>SFX_Death_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a0a46a9a-56c6-438d-ad29-f80e3f1afa65}</destination>
+		</relationship>
+	</object>
+</objects>

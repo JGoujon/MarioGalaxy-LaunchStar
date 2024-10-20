@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638647171262475000
+  lastModified: 638650624941343566
   FileSizes:
   - Name: Desktop
-    Value: 1467424
+    Value: 1655904
   Exists: 1
 --- !u!114 &-4200855580694891005
 MonoBehaviour:
@@ -235,13 +235,42 @@ MonoBehaviour:
   - {fileID: 3566912812850951660}
   - {fileID: -4200855580694891005}
   - {fileID: -8170207314294316510}
+  - {fileID: 4659340666349127812}
+  - {fileID: 1233405584391312136}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4848172271510593959}
   StringsBanks:
   - {fileID: 3461546473987185131}
-  cacheTime: 638647171262500088
+  cacheTime: 638650624941363424
   cacheVersion: 131616
+--- !u!114 &1233405584391312136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Death
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_Death
+  Guid:
+    Data1: -787290056
+    Data2: 1335289774
+    Data3: -854792779
+    Data4: -914325781
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2640282469091159902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,10 +313,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638647171262500088
+  lastModified: 638650624941363424
   FileSizes:
   - Name: Desktop
-    Value: 1208
+    Value: 1296
   Exists: 1
 --- !u!114 &3566912812850951660
 MonoBehaviour:
@@ -316,6 +345,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4659340666349127812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/VO_Player
+  m_EditorClassIdentifier: 
+  Path: event:/Player/VO_Player
+  Guid:
+    Data1: 1073722270
+    Data2: 1185975787
+    Data3: 1700032182
+    Data4: 1904125904
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &6616368046014373731
 MonoBehaviour:
   m_ObjectHideFlags: 0
