@@ -42,24 +42,33 @@ public class MovementInput : MonoBehaviour {
 		cam = Camera.main;
 		controller = this.GetComponent<CharacterController> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		InputMagnitude ();
 
+    // Update is called once per frame
+    void Update()
+    {
+        InputMagnitude();
+
+        // Check if player is on the ground
         isGrounded = controller.isGrounded;
+
         if (isGrounded)
         {
-            verticalVel -= 0;
+            // Reset vertical velocity when grounded
+            verticalVel = -2f; // Small negative value to keep player grounded
         }
         else
         {
-            verticalVel -= 1;
+            // Apply gravity, capped at a max fall speed
+            float gravity = -60f; // Gravity acceleration
+            float maxFallSpeed = -100f; // Maximum fall speed
+
+            // Accelerate downwards until reaching max fall speed
+            verticalVel = Mathf.Max(verticalVel + gravity * Time.deltaTime, maxFallSpeed);
         }
-        moveVector = new Vector3(0, verticalVel * .2f * Time.deltaTime, 0);
+
+        // Apply movement vector
+        moveVector = new Vector3(0, verticalVel * Time.deltaTime, 0);
         controller.Move(moveVector);
-
-
     }
 
     void PlayerMoveAndRotation() {

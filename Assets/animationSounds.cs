@@ -11,7 +11,6 @@ public class animationSounds : MonoBehaviour
     public string playerMove;
 
     private bool isWalking = false;
-    private bool audioInitialized = false;
 
     private float idleTime = 0f;
     private float idleThreshold = 10f; // Temps d'attente avant les vocalisations
@@ -60,14 +59,6 @@ public class animationSounds : MonoBehaviour
         }
     }
 
-    private void InitializeAudio()
-    {
-        // Lance un son ou initialise les événements audio de FMOD
-        RuntimeManager.CoreSystem.mixerSuspend();
-        RuntimeManager.CoreSystem.mixerResume();
-
-        Debug.Log("Audio initialized after user interaction.");
-    }
 
     void Update()
     {
@@ -94,12 +85,7 @@ public class animationSounds : MonoBehaviour
             // Vérifie si le joueur doit vocaliser après être resté immobile
             Player_Talk();
         }
-        // Détecte la première interaction du joueur
-        if (!audioInitialized && Input.anyKeyDown)
-        {
-            InitializeAudio();
-            audioInitialized = true;
-        }
+
     }
 
     void OnDestroy()
