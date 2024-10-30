@@ -18,6 +18,8 @@ public class ReloadScene : MonoBehaviour
     public string snapshot;
     public FMOD.Studio.EventInstance instance;
     private FMOD.Studio.EventInstance  muteaudio;
+    private bool audioSuspended = false;
+
 
     private void Start()
     {
@@ -57,11 +59,23 @@ public class ReloadScene : MonoBehaviour
         {
             // Stop the snapshot to restore normal audio when the application gains focus
             muteaudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
+            if (audioSuspended)
+            {
+                RuntimeManager.CoreSystem.mixerResume();
+                audioSuspended = false;
+                Debug.Log("FMOD audio resumed.");
+            }
         }
         else
         {
             // Start the snapshot to mute audio when the application loses focus
             muteaudio.start();
+
+            // Suspend le mixeur FMOD lorsque l'application perd le focus
+            RuntimeManager.CoreSystem.mixerSuspend();
+            audioSuspended = true;
+            Debug.Log("FMOD audio suspended.");
         }
     }
 
