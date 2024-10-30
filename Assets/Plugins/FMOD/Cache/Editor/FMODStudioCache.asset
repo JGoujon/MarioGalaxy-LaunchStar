@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638651493411073685
+  lastModified: 638658417231120002
   FileSizes:
   - Name: Desktop
-    Value: 1656064
+    Value: 1672320
   Exists: 1
 --- !u!114 &-4200855580694891005
 MonoBehaviour:
@@ -155,6 +155,60 @@ MonoBehaviour:
   MinDistance: 20
   MaxDistance: 100
   Length: 1200
+--- !u!114 &-2525038338814257516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reverb
+  Guid:
+    Data1: 1865568622
+    Data2: 1099115739
+    Data3: -1636300669
+    Data4: -317821869
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2328939647626895536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/FOL/FOL_Player
+  m_EditorClassIdentifier: 
+  Path: event:/Player/FOL/FOL_Player
+  Guid:
+    Data1: 1647099491
+    Data2: 1138041581
+    Data3: -1506131559
+    Data4: 434411227
+  Banks:
+  - {fileID: -4848172271510593959}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1210254876097527039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,12 +291,14 @@ MonoBehaviour:
   - {fileID: -8170207314294316510}
   - {fileID: 4659340666349127812}
   - {fileID: 1233405584391312136}
+  - {fileID: -2328939647626895536}
+  - {fileID: -2525038338814257516}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4848172271510593959}
   StringsBanks:
   - {fileID: 3461546473987185131}
-  cacheTime: 638651493411103611
+  cacheTime: 638658417231139946
   cacheVersion: 131616
 --- !u!114 &1233405584391312136
 MonoBehaviour:
@@ -313,10 +369,10 @@ MonoBehaviour:
   Path: LaunchStar_FMOD_Proj/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638651493411103611
+  lastModified: 638658417231139946
   FileSizes:
   - Name: Desktop
-    Value: 1296
+    Value: 1494
   Exists: 1
 --- !u!114 &3566912812850951660
 MonoBehaviour:

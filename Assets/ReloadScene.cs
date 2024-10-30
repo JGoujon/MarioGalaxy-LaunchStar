@@ -16,7 +16,6 @@ public class ReloadScene : MonoBehaviour
     public Canvas canvasSmoke;
     public string music;
     public string snapshot;
-    public string deathSound;
     public FMOD.Studio.EventInstance instance;
     private FMOD.Studio.EventInstance  muteaudio;
 

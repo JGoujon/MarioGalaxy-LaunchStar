@@ -7,6 +7,7 @@ public class animationSounds : MonoBehaviour
     public string playerLand;
     public string playerWalk;
     public string playerTalk;
+    public string playerMove;
 
     private bool isWalking = false;
     private float idleTime = 0f;
@@ -31,6 +32,13 @@ public class animationSounds : MonoBehaviour
         if (isWalking && characterController.isGrounded)
         {
             FMODUnity.RuntimeManager.PlayOneShot(playerWalk, transform.position);
+        }
+    }
+    public void Player_Move()
+    {
+        if (isWalking && characterController.isGrounded)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot(playerMove, transform.position);
         }
     }
 

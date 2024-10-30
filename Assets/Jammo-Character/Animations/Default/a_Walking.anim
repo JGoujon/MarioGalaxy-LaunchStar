@@ -41028,6 +41028,13 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.26666668
+    functionName: Player_Move
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.26666668
     functionName: Player_Walk
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -41036,6 +41043,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.8
     functionName: Player_Walk
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.8
+    functionName: Player_Move
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
