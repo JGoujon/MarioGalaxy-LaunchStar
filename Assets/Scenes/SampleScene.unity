@@ -437,7 +437,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161408642}
-  m_LocalRotation: {x: 0.06669529, y: -0.000000017168066, z: 0.0000000011475844, w: 0.9977734}
+  m_LocalRotation: {x: 0.0666953, y: 0.00000001716807, z: -0.000000001147585, w: 0.9977734}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5788,6 +5788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Reload
+      objectReference: {fileID: 0}
+    - target: {fileID: 928725551996133447, guid: 17035a77ee20e2e47b15a5be0b0b488f,
+        type: 3}
+      propertyPath: snapshot
+      value: snapshot:/OutOfFocus
       objectReference: {fileID: 0}
     - target: {fileID: 928725553743789846, guid: 17035a77ee20e2e47b15a5be0b0b488f,
         type: 3}
